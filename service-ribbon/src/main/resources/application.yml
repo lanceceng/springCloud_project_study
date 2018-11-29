@@ -1,0 +1,26 @@
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka/
+server:
+  port: 8764
+spring:
+  application:
+    name: service-ribbon
+
+#    Spring cloud有两种服务调用方式，一种是ribbon+restTemplate，另一种是feign
+#    ribbon是一个负载均衡客户端，可以很好的控制htt和tcp的一些行为。Feign默认集成了ribbon。
+#
+#    ribbon 已经默认实现了这些配置bean：
+#
+#    IClientConfig ribbonClientConfig: DefaultClientConfigImpl
+#
+#    IRule ribbonRule: ZoneAvoidanceRule
+#
+#    IPing ribbonPing: NoOpPing
+#
+#    ServerList ribbonServerList: ConfigurationBasedServerList
+#
+#    ServerListFilter ribbonServerListFilter: ZonePreferenceServerListFilter
+#
+#    ILoadBalancer ribbonLoadBalancer: ZoneAwareLoadBalancer

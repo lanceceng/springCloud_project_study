@@ -1,0 +1,22 @@
+server:
+  port: 8762
+
+spring:
+  application:
+    name: service-hi
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka/ #单实例的注册中心
+
+#eureka:
+#  client:
+#    serviceUrl:
+#      defaultZone: http://peer1:8761/eureka/ #配置多实例的注册中心，集群化
+
+#  启动eureka-server 工程；启动service-hi工程，它的端口为8762；
+#  将service-hi的配置文件的端口改为8763,并启动，这时你会发现：service-hi在eureka-server注册了2个实例，这就相当于一个小的集群。
+#
+#  如何在idea下启动多个实例，请参照这篇文章：
+#  https://blog.csdn.net/forezp/article/details/76408139
