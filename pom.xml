@@ -14,8 +14,9 @@
     <modules>
         <module>eureka-server</module>
         <module>service-hi</module><!-- hi服务 -->
-        <!--<module>service-lucy</module>&lt;!&ndash; lucy服务 &ndash;&gt;-->
+        <module>service-lucy</module><!-- lucy服务 -->
         <module>service-feign</module>
+        <module>service-turbine</module>
         <module>service-ribbon</module>
         <module>service-zuul</module>
     </modules>
